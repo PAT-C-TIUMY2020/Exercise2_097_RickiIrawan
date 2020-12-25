@@ -15,7 +15,7 @@ namespace Client_20180140097_RickiIrawan
 
         public Mahasiswa search(string nim)
         {
-            var json = new WebClient().DownloadString("http://localhost:1908/Mahasiswa/" + nim);
+            var json = new WebClient().DownloadString("http://localhost:1976/Mahasiswa/" + nim);
             var data = JsonConvert.DeserializeObject<Mahasiswa>(json);
             return data;
         }
@@ -23,7 +23,7 @@ namespace Client_20180140097_RickiIrawan
 
         public List<Mahasiswa> getAllData()
         {
-            var json = new WebClient().DownloadString("http://localhost:1908/Mahasiswa");
+            var json = new WebClient().DownloadString("http://localhost:1976/Mahasiswa");
             var data = JsonConvert.DeserializeObject<List<Mahasiswa>>(json);
             return data;
         }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btDatasemua = new System.Windows.Forms.Button();
-            this.NIMSearch = new System.Windows.Forms.TextBox();
+            this.NIMSearch1 = new System.Windows.Forms.TextBox();
             this.btClear = new System.Windows.Forms.Button();
             this.btSearch = new System.Windows.Forms.Button();
             this.txtAngkatan = new System.Windows.Forms.TextBox();
@@ -56,13 +56,13 @@
             this.btDatasemua.UseVisualStyleBackColor = true;
             this.btDatasemua.Click += new System.EventHandler(this.btDatasemua_Click);
             // 
-            // NIMSearch
+            // NIMSearch1
             // 
-            this.NIMSearch.Location = new System.Drawing.Point(136, 230);
-            this.NIMSearch.Name = "NIMSearch";
-            this.NIMSearch.Size = new System.Drawing.Size(168, 20);
-            this.NIMSearch.TabIndex = 27;
-            this.NIMSearch.TextChanged += new System.EventHandler(this.NIMSearch_TextChanged);
+            this.NIMSearch1.Location = new System.Drawing.Point(136, 230);
+            this.NIMSearch1.Name = "NIMSearch1";
+            this.NIMSearch1.Size = new System.Drawing.Size(168, 20);
+            this.NIMSearch1.TabIndex = 27;
+            this.NIMSearch1.TextChanged += new System.EventHandler(this.NIMSearch_TextChanged);
             // 
             // btClear
             // 
@@ -181,7 +181,6 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(475, 450);
             this.Controls.Add(this.btDatasemua);
-            this.Controls.Add(this.NIMSearch);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.txtAngkatan);
@@ -194,9 +193,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.NIMSearch1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormB";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,7 +207,7 @@
         #endregion
 
         private System.Windows.Forms.Button btDatasemua;
-        private System.Windows.Forms.TextBox NIMSearch;
+        private System.Windows.Forms.TextBox NIMSearch1;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.TextBox txtAngkatan;

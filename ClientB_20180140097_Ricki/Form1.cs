@@ -48,14 +48,14 @@ namespace ClientB_20180140097_Ricki
         {
             var json = new WebClient().DownloadString("http://localhost:1976/Mahasiswa");
             var data = JsonConvert.DeserializeObject<List<Mahasiswa>>(json);
-            string nim = NIMSearch.Text;
+            string nim = NIMSearch1.Text;
             if (nim == null || nim == "")
             {
                 dataGridView1.DataSource = data;
             }
             else
             {
-                var item = data.Where(x => x.nim == NIMSearch.Text).ToList();
+                var item = data.Where(x => x.nim == NIMSearch1.Text).ToList();
 
                 dataGridView1.DataSource = item;
             }
@@ -92,6 +92,11 @@ namespace ClientB_20180140097_Ricki
         }
 
         private void NIMSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
