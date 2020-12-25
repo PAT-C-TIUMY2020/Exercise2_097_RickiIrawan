@@ -38,33 +38,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(367, 65);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(122, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(106, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Server OFF";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(309, 118);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-4, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 13);
+            this.label2.Size = new System.Drawing.Size(359, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Klik ON untuk Mengaktifkan Server ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(379, 31);
+            this.label3.Font = new System.Drawing.Font("Calisto MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(136, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(74, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Server";
             // 
             // btON
             // 
-            this.btON.Location = new System.Drawing.Point(196, 223);
+            this.btON.Location = new System.Drawing.Point(63, 162);
             this.btON.Name = "btON";
             this.btON.Size = new System.Drawing.Size(75, 23);
             this.btON.TabIndex = 3;
@@ -74,7 +77,7 @@
             // 
             // btOFF
             // 
-            this.btOFF.Location = new System.Drawing.Point(465, 223);
+            this.btOFF.Location = new System.Drawing.Point(190, 162);
             this.btOFF.Name = "btOFF";
             this.btOFF.Size = new System.Drawing.Size(75, 23);
             this.btOFF.TabIndex = 4;
@@ -87,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(345, 210);
             this.Controls.Add(this.btOFF);
             this.Controls.Add(this.btON);
             this.Controls.Add(this.label3);
