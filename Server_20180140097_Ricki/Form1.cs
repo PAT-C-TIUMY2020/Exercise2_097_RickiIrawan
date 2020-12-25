@@ -20,53 +20,58 @@ namespace Server_20180140097_Ricki
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+
+        private void btON_Click_1(object sender, EventArgs e)
+        {
+            {
+                ServiceHost hostObjek = null;
+
+                try
+                {
+                    hostObjek = new ServiceHost(typeof(TI_UMY));
+                    hostObjek.Open();
+                    label1.Text = "Server ON";
+                    label2.Text = "Klik OFF Untuk Mematikan Server";
+                    btON.Enabled = false;
+                    btOFF.Enabled = true;
+                }
+                catch (Exception ex)
+                {
+                    hostObjek = null;
+                    Console.WriteLine(ex.Message);
+                    Console.ReadLine();
+                }
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btOFF_Click_1(object sender, EventArgs e)
         {
-            ServiceHost hostObject = null;
+            ServiceHost hostObjek;
 
             try
             {
-                hostObject = new ServiceHost(typeof(TI_UMY));
-                hostObject.Close();
-                label2.Text = "Server OFF";
-                label3.Text = "Klik OFF untuk Menonaktifkan Server";
-                button1.Enabled = true;
-                button2.Enabled = false;
+                hostObjek = new ServiceHost(typeof(TI_UMY));
+                hostObjek.Close();
+                label1.Text = "Server OFF";
+                label2.Text = "Klik ON Untuk Menghidupkan Server";
+                btON.Enabled = true;
+                btOFF.Enabled = false;
             }
             catch (Exception ex)
             {
-                hostObject = null;
+                hostObjek = null;
                 Console.WriteLine(ex.Message);
-                Console.WriteLine();
+                Console.ReadLine();
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
-            ServiceHost hostObject = null;
-
-            try
             {
-                hostObject = new ServiceHost(typeof(TI_UMY));
-                hostObject.Open();
-                label2.Text = "Server ON";
-                label3.Text = "Klik OFF untuk Menonaktifkan Server";
-                button1.Enabled = false;
-                button2.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                hostObject = null;
-                Console.WriteLine(ex.Message);
-                Console.WriteLine();
+                btON.Enabled = true;
+                btOFF.Enabled = false;
             }
         }
     }
 }
-    
-
